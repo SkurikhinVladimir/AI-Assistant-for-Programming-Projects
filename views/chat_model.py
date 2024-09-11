@@ -7,7 +7,6 @@ from file_handling import load_files_content
 from settings import settings
 from streamlit_utils.sidebar import sidebar_function
 
-
 openai_api_base = settings.api_base
 model = settings.model_name
 openai_api_key = settings.api_key
