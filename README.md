@@ -2,6 +2,20 @@
 
 This is a Streamlit-based application that provides an AI assistant for programming projects. The assistant is designed to understand the structure and content of multiple files, where each file includes its name and content. The goal is to provide helpful answers to the user's questions, referencing relevant parts of the code or offering guidance on solving specific problems.
 
+## Getting Started
+
+1. Clone the repository and navigate to the project directory:
+    ```bash
+    git clone https://github.com/SkurikhinVladimir/AI-Assistant-for-Programming-Projects.git
+    cd AI-Assistant-for-Programming-Projects
+    ```
+2. Create a `.env` file in the project directory with your OpenAI API key and other settings. You can use [`.env.example`](./.env.example) as a reference. For a free access to the model, you can obtain an API key from [Groq's Console](https://console.groq.com/keys).
+3. Build and run the application using Docker. Ensure Docker is installed, then use the following command:
+    ```bash
+    docker-compose up --build
+    ```
+   This will build the Docker image and start the application in a container. The application will be available at [localhost:8501](http://localhost:8501).
+
 ## Features
 
 ### Chat Mode
@@ -11,25 +25,6 @@ Interact with the AI assistant by entering questions or prompts. The assistant r
 ### Prompt Display Mode
 
 Display the full prompt without invoking the model. This mode allows users to review and edit the prompt before submitting it to the AI assistant.
-
-### Settings
-
-Uses a settings file to store OpenAI-compatible model names, API bases, and API keys.
-
-## Getting Started
-
-1. Clone the repository and navigate to the project directory:
-    ```bash
-    git clone https://github.com/SkurikhinVladimir/AI-Assistant-for-Programming-Projects.git
-    cd AI-Assistant-for-Programming-Projects
-    ```
-2. Create a `.env` file in the project directory with your OpenAI API key and other settings. You can use `.env.example` as a reference. For a free access to the model, you can obtain an API key from [Groq's Console](https://console.groq.com/keys).
-3. Build and run the application using Docker. Ensure Docker is installed, then use the following command:
-    ```bash
-    docker-compose up --build
-    ```
-   This will build the Docker image and start the application in a container. The application will be available at [localhost:8501](http://localhost:8501).
-
 
 ## Usage
 
