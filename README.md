@@ -10,7 +10,8 @@ This is a Streamlit-based application that provides an AI assistant for programm
     cd AI-Assistant-for-Programming-Projects
     ```
 2. Create a `.env` file in the project directory with your OpenAI API key and other settings. You can use [`.env.example`](./.env.example) as a reference. For a free access to the model, you can obtain an API key from [Groq's Console](https://console.groq.com/keys).
-3. Build and run the application using Docker. Ensure Docker is installed, then use the following command:
+3. Update the [docker-compose.yml](./docker-compose.yaml) file to mount a volume that includes the directory containing your projects.
+4. Build and run the application using Docker. Ensure Docker is installed, then use the following command:
     ```bash
     docker-compose up --build
     ```
