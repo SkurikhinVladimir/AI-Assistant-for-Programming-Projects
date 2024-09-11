@@ -1,0 +1,14 @@
+services:
+  code-assistant:
+    container_name: code-assistant
+    build: .
+    image: code-assistant
+    ports:
+      - "8501:8501"
+    environment:
+      - MODEL_NAME=${MODEL_NAME}
+      - API_BASE=${API_BASE}
+      - API_KEY=${API_KEY}
+    volumes:
+      # Specify your path to the projects directory
+      - ./projects:/app/projects
